@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d6d6d6;
+}
+html{
+    font-size: 10px;
+}
+.quiz-container{
+    padding: 3rem 0 ;
+    width: 50%;
+    margin: auto;
+}   
+.quiz-container .app-info{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    text-transform: capitalize; 
+    color:#022534;    
+}
+.count-down{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+}
+.count-down div{
+    margin:0 10px;
+    background-color: #022534;
+    color: #FFF; 
+    padding: 1rem;   
+    border-radius:.5rem;
+}
+
+.quiz-area .question-div{
+    text-align: center;
+    text-transform: capitalize;
+    padding:2rem 1rem;
+    background-color: #DDE6ED;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.quiz-area .answers-div{
+    padding: 2rem 0;
+    text-transform: capitalize;
+}
+.quiz-area .answers-div .answer{
+    margin: .5rem;
+    padding:1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.6rem;
+}
+
+.quiz-area .answers-div .answer:hover{
+    text-decoration: underline;
+}
+.spans{
+    text-align: center;
+}
+.spans span{
+    width: 20px;
+    background-color: #222;
+    margin: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.spans .active{
+    background-color: #2f4e68;
+    transform: scale(1.1);
+}
+
+
+.submit-btn{
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.submit-btn button{
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15rem;
+}
+.try{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    color: #FFF;
+    background-color: #222;
+}
+.tryQ{
+    font-size:1.6rem;
+    margin-right: 1rem;
+}
+.quiz-area .answers-div .answer.selected{
+    color: green;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #022534;
+    font-weight: 600;
+    height: 100%;
+    font-size: 2rem;
+
+}
+
+@media (max-width:768px) {
+    .quiz-container{
+        width: 100%;
+    }
+    .app-info{
+        padding: 2rem;
+        flex-direction: column;
+    }
+}
+
+
